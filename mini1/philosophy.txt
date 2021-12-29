@@ -1,0 +1,2 @@
+"The most dangerous enemy of a better solution is an existing codebase that is just good enough".
+	-Eric S. Raymond
