@@ -1,0 +1,59 @@
+Samantha Handal 260983914
+
+1)
+First we need to initiate the gdb command by telling the compiler we want to use debugging tools, 
+when compiling we use the -g flag
+
+shanda2@teach-vw1:~$ gcc -g -o labapp labapp.c zoomrecs.c
+
+Then to open the debugger…
+
+shanda2@teach-vw1:~$ gdb labapp
+
+Next what we want to do is set a breakpoint, when running the code with gdb, it’ll stop at breakpoints so we
+can further examine what is going on at that point. To set a breakpoint to generateAttendance, all we
+need to do is feed the breakpoint command the funciton name (http://www.unknownroad.com/rtfm/gdbtut/gdbbreak.html has useful information on breakpoints)
+
+(gdb) break generateAttendance
+
+To get to this breakpoint we then run the program (with parameters) and it should stop right before the function call
+(won’t execute it)
+
+(gdb) run input.csv output.csv
+
+2)
+The benefits of using the function name as a breakpoint is that the first time it will get called, it takes
+us inside the function (whereas using break 75/line number, would take us outside the funtion then we would have
+to step into the function before we can start scanning the contents, therefore an extra step...)
+
+We are now placed at the first occurence where our code calls the generateAttendance method at the header of the method
+
+Since we don’t know the source of our error, we would continue moving through the function line by line
+using the next command which shows the line we are currently at moves over it executing the functionally 
+off that line
+
+(gdb) next
+
+We would execute next until we come across the point where we accessing the first node of the linked list,
+which for me would be the first line within generateAttendance for me (therefore according to my code, I
+would only use “next” once as when you step into a function it brings you to the header of the function before
+acessing the first line)
+To print the address of the first node (head), we use info command
+
+(gdb) print &head
+
+This will print a gdb variable followed by the pointer to the head variable along it’s address in memory
+($1 = (head *) 0x788665883….)
+Finally to exit from gdb…
+
+(gdb) quit
+
+since we are in the middle of a session, the gdb program will ask us if we are sure we want to quit
+
+A debugging session is active.
+
+	Inferior 1 [process 841] will be killed.
+
+Quit anyway? (y or n) y
+
+here we would specify 'y'

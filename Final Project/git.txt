@@ -1,0 +1,53 @@
+commit dd8e5aab5a784776a9494004d4b008d2feba980e
+Author: Samantha HANDAL <shanda2@teaching.CS.McGill.CA>
+Date:   Fri Apr 23 20:31:11 2021 -0400
+
+    finished csv2html.sh, exporting git log
+
+commit 28e3732da9acc7b6598ce9dfd5c63d08a8cccc81
+Author: Samantha HANDAL <shanda2@teaching.CS.McGill.CA>
+Date:   Fri Apr 23 18:02:51 2021 -0400
+
+    all code is commented and debugged, need to make makefile
+
+commit 81f266c79116d2671f79cceafa82c2570d49bf69
+Author: Samantha HANDAL <shanda2@teaching.CS.McGill.CA>
+Date:   Fri Apr 23 13:47:46 2021 -0400
+
+    output csv file is being made and contains proper data, minor bug fixes and make file left for exersize 3
+
+commit 4225a3366d88de5eba707e28e6eae00829ae9fa7
+Author: Samantha HANDAL <shanda2@teaching.CS.McGill.CA>
+Date:   Fri Apr 23 12:44:32 2021 -0400
+
+    linked list is now fixed, all information is stored properly, starting generateAttendance
+
+commit ee2eadda284f492dd91d2f9d48f9ee73ee786c30
+Author: Samantha HANDAL <shanda2@teaching.CS.McGill.CA>
+Date:   Fri Apr 23 11:09:48 2021 -0400
+
+    tested first half of code, pointers for head of list and insert at head are working, need, need to fix inserting in middle of list
+
+commit 9c5d758ef1466218f7b3e36ca26a372199307a97
+Author: Samantha HANDAL <shanda2@teaching.CS.McGill.CA>
+Date:   Fri Apr 23 01:38:18 2021 -0400
+
+    half the labpp.c is done, core dumps errors trying to resolve
+
+commit db7a0eed85ae908aa0fafbe889a1c549574cdc90
+Author: Samantha HANDAL <shanda2@teaching.CS.McGill.CA>
+Date:   Thu Apr 22 22:19:52 2021 -0400
+
+    started zoomrecs.c and zoomrecs.h, not tested yet but most code is finished
+
+commit 6bcf3730b61ae8e15833b8df2f5870d3900b86a3
+Author: Samantha HANDAL <shanda2@teaching.CS.McGill.CA>
+Date:   Thu Apr 22 15:28:34 2021 -0400
+
+    finished fixformat.sh... minor bugs left
+
+commit 4828fb7becce10ec2e8a2ec4d33b2ce9af8d10d9
+Author: Samantha HANDAL <shanda2@teaching.CS.McGill.CA>
+Date:   Thu Apr 22 11:17:24 2021 -0400
+
+    made shell script file
